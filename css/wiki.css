@@ -121,7 +121,8 @@ body, html {
         color: white;
 }
 
-#kopfbereich .useraccounts {text-align: center;
+#kopfbereich .useraccounts {
+        text-align: center;
         font-size: 50px;
         letter-spacing: 25px;
         word-spacing: 5px;
