@@ -1,8 +1,9 @@
 /* background: linear-gradient(-180deg, #E3E3E3, #707070) fixed; */
+/* background: linear-gradient(130deg, #0084FF, #A1D2FF) fixed; */
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(130deg, #0084FF, #A1D2FF) fixed;
+  background-color: #c8c2aa;
 }
 
 * {
