@@ -1,0 +1,31 @@
+body {
+        backgroun-image: url();
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        scroll-behavior: smooth;
+        background-color: #C8C2AA;
+        background-image: -webkit-linear-gradient(left, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+        -webkit-linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+        background-image: -o-linear-gradient(left, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+        -o-linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+        background-image: linear-gradient(to right, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+        linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+        color: #4D493E;
+}
+@font-face {font-family: 'NieR Title'; src: url("../fonts/Benguiat Book.ttf");}
+@font-face {font-family: 'NieR HUD'; src: url("../fonts/SCE-PS3-RD-R-LATIN.TTF");}
+#gtmk-yorha {text-align: center; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+#gtmk-yorha h1 {font-family: 'NieR Title'; font-size: 48px; word-spacing: 23px; letter-spacing: 5px; text-shadow: 0px 0px 3px #35322F;}
+#gtmk-yorha h4 {font-family: 'NieR Title'; font-size: 32px;}
+#gtmk-yorha a {text-decoration: none; color: #35322F;}
+#gtmk-yorha a:visted {text-decoration: none; color: #35322F;}
+#gtmk-yorha hr {border: 2px solid #35322F; width: 85%;}
+
+
+#gtmk-yorha .image { width: 200px; height: 200px; background-image: url(../images/lunartear.png); background-size: 100% 100%; transition: 1s;}
+#gtmk-yorha .image:hover {transform: scale(1.2); box-shadow: 20px 20px 40px #FFF, -20px -20px 40px #FFF; transition: 1s;}
+
+.button {border-radius: 4px; font-family: 'NieR HUD'; padding: 8px; background-color: #0d0e0f; width: 55%; transition: 0.3s; color: #FFF;}
+.button:hover {opacity: 1; transform: scale(1.12); transition: 0.3s; box-shadow: 5px 5px 3px #35322F; cursor: pointer; background-color: #292C2E}
+.button:active {background-color: #D7D7D7; color: #0d0e0f; transition: 0s;}
