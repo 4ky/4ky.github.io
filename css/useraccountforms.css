@@ -31,7 +31,7 @@ body {
 
 .login-container h1 {
     text-align: center;
-    line-height: 0.2px;
+    line-height: 0px;
   }
 
 input[type=text], input[type=password] {
@@ -86,7 +86,14 @@ a {
 .forgot-password {
     float: right;
     font-size: 11px;
+    transition: 0.3s;
   }
+
+.forgot-password:hover {
+    transform: scale(1.3);
+    padding-right: 25px;
+    transition: 0.3s;
+}
 
 .forgot-password, a {
     text-decoration: none;
@@ -101,6 +108,13 @@ a {
   }
 
 #upperCase {
-    color: #FF5252;
+    color: #FFF;
     font-weight: bold;
+    background-color: #FF5252;
+    padding: 15px;
+  }
+
+::selection {
+    background-color: #3E3E3E;
+    color: #FFF;
   }
