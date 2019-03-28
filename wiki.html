@@ -2,8 +2,8 @@
 <html>
  <head>
         <title>Lunar Tear Project</title>
-        <meta name="Author" content="Lunar Team Editor Team">
         <meta charset="utf-8">
+        <meta name="Author" content="Lunar Team Editor Team">
         <meta name="copyright" content="">
         <meta name="robots" content="index, follow">
         <meta name="description" content="Lunar Tear Project — Eine Wiki für NieR: Automata">
@@ -16,9 +16,6 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,700,900" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 
-         <!-- Icon stylesheet -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
         <!-- Stylesheet for Japanese typography -->
         <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
 
@@ -29,6 +26,9 @@
         <!-- Link SS-Library BOOTSTARP f. auto. menu control -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
+        <!-- Icon stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <!-- Link own JS-Library >> standard.js -->
         <script type="text/javascript" src="javascript/standard.js"></script>
      
@@ -37,6 +37,7 @@
         <script type="text/javascript" src="javascript/lunartime.js"></script>
         <script type="text/javascript" src="javascript/timelunar.js"></script>
         <script type="text/javascript" src="javascript/stickyreload.js"></script>
+        <script type="text/javascript" src="javascript/respondheader.js"></script>
  </head>
  <body onload="setActiveMenu('#main_menu_item_home')">
         
@@ -99,44 +100,40 @@
      
         <div id="confirm"></div>
         <div id="kopfbereich">
-            <p style="text-align: center; font-size: 50px; letter-spacing: 25px; word-spacing: 5px; padding-top: 15px;">Lunar Tear Archives</p>
-            <p class="useraccounts"><a class="charref" href="login.html">Einloggen</a><br><a class="charref" href="register.html">Registrieren</a></p>
+            <p class="header-content-text">Lunar Tear Archives</p>
         </div> <!-- End header -->
+     
+        <div id="useraccounts">
+            <p class="useraccounts"><a class="charref" href="login.html"><i class="fa fa-user"></i> Einloggen</a><br><a class="charref" href="register.html"><i class="fa fa-user"></i> Registrieren</a></p>
+        </div>
 
         <div id="navibereich">
         <ul id="nav" class="nav">
         <li id="main-menu"><a id="main_menu_item_home" href="#" class="active">HOME</a></li>
-        <li id="main-menu"><a id="main_menu_item_home" href="#" class="">PERSONA.</a></li>
-        <li id="main-menu"><a id="main_menu_item_home" href="#" class="">SCHCHOBB.</a></li>
-        <li id="main-menu"><a id="main_menu_item_home" href="#" class="">KONTAKT</a></li>
+        <li id="main-menu"><a id="main_menu_item_one" href="#" class="">PERSONA.</a></li>
+        <li id="main-menu"><a id="main_menu_item_two" href="#" class="">SCHCHOBB.</a></li>
+        <li id="main-menu"><a id="main_menu_item_three" href="#" class="">KONTAKT</a></li>
         </ul>
         </div> <!-- End nav area -->
 
         <div id="textbereich">
         <!--   W A S   I S T   D A S   L U N A R   T E A R   P R O J E C T ?   -->
         <p class="title-textarea" id="overview-lunartear">Was ist das <span class="highlight-title">Lunar Tear Project</span>?</p> 
-        <p>Das <span class="">Lunar Tear Project</span> ist eine Seite, die sich mit der NieR-Spielereihe – in diesem Falle NieR: Automata – beschäftigt.</p> 
-        
-        <br>
-
+        <p>Das <span class="">Lunar Tear Project</span> ist eine Seite, die sich mit der NieR-Spielereihe – in diesem Falle NieR: Automata – beschäftigt.</p><br>
+            
+        <!-- [START] niertime and lunartime section [START] -->
         <center>
-
         <hr class="quote-cut">
-
-        <span class="time-head-text">NieR:Automata wurde vor<br>
-                <span id="niertime"></span><br>
+        <span class="highlight-countup">NieR:Automata wurde vor<br>
+        <span id="niertime"></span><br>
         auf Steam veröffentlicht.</span>
-
         <br><br>
-
-        <span class="time-head-text">Das YoRHa-Archiv „Lunar Tears“ wurde hingegen erst vor<br>
-                <span id="lunartime"></span><br>aktiv.
+        <span class="highlight-countup">Das YoRHa-Archiv „Lunar Tears“ wurde hingegen erst vor<br>
+        <span id="lunartime"></span><br>aktiv.
         </span>
-
         <hr class="quote-cut">
-
         </center>
-
+        <!-- [END] niertime and lunartime section [END] -->
         
         <p>Bevor Sie Ihren Weg durch diese Seite bahnen, behalten Sie bitte im Hinterkopf, dass dieses Projekt als eine Art Wiki dienen wird und Tipps, Tricks, Hilfestellungen, Leitfäden, Videos, etc. zur Verfügung stellen wird, um NieR: Automata zu 100 % abschließen zu können.<br><br><center><span style="font-size: 17px; font-family: 'NieR HUD';"><span class="warning" style="padding: 4px; padding-left: 10px; padding-right: 10px;">Kurzgesagt: Diese Seite wird Spoiler und Plots verraten!</span></span></center></p>
           
@@ -191,7 +188,7 @@
                 <br>
         
             
-        <p>In der Hoffnung, dass die Androiden die Maschinen vernichten können und das Leben auf der Erde wieder möglich wird, kämpfen sie einen scheinbar unendlichen Krieg gegen eine Armee von immer wieder neu hergestellten Robotern. Ausnahmen: [→ siehe: <a class="charref" href="#">Machine-Lifeform/special</a>]</p>
+        <p>In der Hoffnung, dass die Androiden die Maschinen vernichten können und das Leben auf der Erde wieder möglich wird, kämpfen sie einen scheinbar unendlichen Krieg gegen eine Armee von immer wieder neu hergestellten Robotern. Ausnahmen: [? siehe: <a class="charref" href="#">Machine-Lifeform/special</a>]</p>
             
         <p>Jedoch ist nicht jeder Kontakt gleich feindlich. Unterstütz werden die YoRHa-Androiden von örtlichen Widerstandskämfern, die ein Lager in den <strong><a class="charref" href="#">City Ruins</a></strong> errichtet haben und die auf der Erde eingesetzten Androiden mit Aufgaben, Informationen und anderen Mittel im Kampf gegen die Maschinen unterstützen.</p>
             
@@ -216,57 +213,38 @@
         <hr class="hr-thin" noshade />
         <p class="title-sub" style="text-align: center;">Die City Ruins</p>
             
+        <!--
         <p>Zu Beginn ist man in den <strong><em>City Ruins</em></strong>, einer sehr urbanen Region, in der die fehlende Präsenz von Menschen zur starken Vegetation gefühhrt hat. In den City Ruins, wo sich auch das <strong><em>Resistance Camp</em></strong> befindet, werden in der Stroy die meisten (wichtigen) <em>Events</em> stattfinden und verlaufen.</p>
+        -->
             
-        <div class="screenshots">
-            <figure class="screenshot-showcase">
-                <img src="images/20190323090419_1.jpg" title="City Ruins Screenshot" width="350" alt="City Ruins Screenshot">
-                <figcaption>Ein Screenshot der <strong>City Ruins</strong> aus einer Cutscene.</figcaption>    
+        <center>
+            <figure>
+                <img class="loc-img" src="images/20190323090425_1.jpg" width="100" alt="">
+                <figcaption>Hover to enlarge.</figcaption>
             </figure>
-            
-            <figure class="screenshot-showcase">
-                <img src="images/20190323090422_1.jpg" title="City Ruins Screenshot" width="350" alt="City Ruins Screenshot">
-                <figcaption>Ein Screenshot der <strong>City Ruins</strong> aus einer Cutscene.</figcaption>    
-            </figure>
-            
-            <figure class="screenshot-showcase">
-                <img src="images/20190323090425_1.jpg" title="City Ruins Screenshot" width="350" alt="City Ruins Screenshot">
-                <figcaption>Ein Screenshot der <strong>City Ruins</strong> aus einer Cutscene.</figcaption>    
-            </figure>
-        </div>
-            
-        <br><br><br><br><br><br><br><br><br>
+        </center>
+        <br>
             
         <hr class="hr-thin" noshade />
             
         <hr class="hr-thin" noshade />
         
         <p class="title-sub" style="text-align: center;">Das Resistance Camp</p>
-        <div class="screenshots">
-            <figure class="screenshot-showcase">
-                <img src="images/20190323090840_1.jpg" title="Resistance Camp Screenshot" width="350" alt="Resistance Camp Screenshot">
-                <figcaption>Ein Screenshot des <em>Resistance Camps</em> aus einer Cutscene.</figcaption>    
+        <center>
+            <figure>
+                <img class="loc-img" src="images/20190323090902_1.jpg" width="100" alt="">
+                <figcaption>Hover to enlarge.</figcaption>
             </figure>
+        </center>
             
-            <figure class="screenshot-showcase">
-                <img src="images/20190323090843_1.jpg" title="Resistance Camp Screenshot" width="350" alt="Resistance Camp Screenshot">
-                <figcaption>Ein Screenshot des <em>Resistance Camps</em> aus einer Cutscene.</figcaption>    
-            </figure>
-            
-            <figure class="screenshot-showcase">
-                <img src="images/20190323090902_1.jpg" title="Resistance Camp Screenshot" width="350" alt="Resistance Camp Screenshot">
-                <figcaption>Ein Screenshot im <a class="link-info" href="#"><strong>FAR Free Look</strong>-Modus.</a></figcaption>    
-            </figure>
-        </div>
-            
-        <br><br><br><br><br><br><br>
+        <br>
             
         <hr class="hr-thin" noshade />
             
                                 <!--   T E X T   A R E A   M A I N   P A R T I A L   D I V   N O N   L I N K   -->
         <br/><hr class="hr-text" noshade />
         <p class="title-textarea" id="overview-char">Charaktere in <span class="highlight-title">NieR: Automata</span></p>
-        <center><span class="hint">Die Geschite in NieR: Automata wird aus verschiedenen Sichten erzählt. [<a class="charref" href="#">→ Stroy/Routes</a>]</span></center>
+        <center><span class="hint">Die Geschite in NieR: Automata wird aus verschiedenen Sichten erzählt. [<a class="" href="#">? Stroy/Routes</a>]</span></center>
 
         <hr class="cutter" id="pos-2b">
 
@@ -367,7 +345,7 @@
 
                 <blockquote class="intel-desc">
                     <h3>Editor Note · REF » 22-79</h3>
-                    <p>“White” is the Commander’s codename, (just like the Instructor’s name is ‘Black’). In the YoRHa Stage Play, she is also only referred to as <span class="lang-jp">「司令官」</span>, Japanese for “Coammdner.” The Instructor is only referred to as <span class="lang-jp">「教官」</span>. They are, never once, referred to by their "color" codenames. It would be really nice if these pages would reflect that fact.</p>
+                    <p>“White” is the Commander’s codename, (just like the Instructor’s name is ‘Black’). In the YoRHa Stage Play, she is also only referred to as <span class="lang-jp">?????</span>, Japanese for “Coammdner.” The Instructor is only referred to as <span class="lang-jp">????</span>. They are, never once, referred to by their "color" codenames. It would be really nice if these pages would reflect that fact.</p>
                 </blockquote>
 
                 <hr class="cutter" id="pos-6O">
@@ -419,7 +397,7 @@
                                 <figcaption>Hover to enlarge.</figcaption>
                         </figure>
                 </center>
-                <p>Devola, <em>auch bekannt als “Debol” in der japanischen Version</em>, ist eine Hauptfigur in NieR und NieR: Automata. Sie ist die jüngere Zwillingsschwester von <a class="charref" href="#pos-popola" title="Charaktere/Polola">Popola</a> und eine Freundin von <a class="charref" href="#" title="Charaktere/Nier">Nier</a>.
+                <p>Devola, <em>auch bekannt als “Debol” in der japanischen Version</em>, ist eine Hauptfigur in NieR und NieR: Automata. Sie ist die jüngere Zwillingsschwester von <a class="charref" href="#pos-popola" title="Charaktere/Polola">Popola</a> und eine Freundin von <a class="charref" href="#" title="Charaktere/Nier">Nier</a></p>.
 
                 <p>Popola und Devola helfen 9S, in den Turm zu gelangen, indem sie den Maschinenfeinden als Ablenkung dienen. Nachdem 9S nicht in der Lage ist, sich den Weg nach innen zu hacken, unternimmt Popola einen Versuch auf Kosten der ständigen Stromschläge. Devola verteidigt 9S und Popola vor den Maschinen, bis Popola es schafft, das Tor des Turms zu öffnen. Devola vernichtet den Roboter, gegen den sie kämpft, und schleppt 9S durch das Tor, das Popola geöffnet hat, und verabschiedet sich von 9S, als das Tor beginnt, sich wieder zu schließen. Sobald das Tor vollständig geschlossen ist, erhält Popola einen vermutlich tödlichen Schock, der einen statischen Bildschirm hervorruft.</p>
 
@@ -471,7 +449,7 @@
                 </center>
                 <p>Jackass ist Mitglied des Widerstands auf der Erde in NieR: Automata.</p>
                 <p>Mit ihr kann ein Ende erhalten werden, das mit einer Makrele zu tun hat.</p><br>
-                <p style="background-color: rgb(0, 126, 238); width: 100%; padding: 9px; box-shadow: -3px -3px 0px rgba(0,0,0,0.05), 3px 3px 0px rgba(0,0,0,0.05);">>>Editor add content</p>
+                <p style="background-color: rgb(0, 126, 238); width: 100%; padding: 9px; box-shadow: -3px -3px 0px rgba(0,0,0,0.05), 3px 3px 0px rgba(0,0,0,0.05);">Editor add content</p>
                 
                 <hr class="cutter" id="pos-adam">
 
@@ -589,7 +567,7 @@
 
                 <p class="title-sub" style="text-align: center;">Engels</p>
                 <center>
-                        <figure>
+                         <figure>
                                 <img class="char-img" src="images/x79q/Engels.png" width="100" alt="">
                                 <figcaption>Hover to enlarge.</figcaption>
                         </figure>
