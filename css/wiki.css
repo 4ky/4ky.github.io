@@ -246,6 +246,7 @@ body, html {
     #textbereich .hint:hover {box-shadow: 5px 5px 0px #6B6962; transition: 0.3s; font-size: 110%;}
     #textbereich .loc-img {width: 300px; transition: 0.6s; cursor: zoom-in;}
     #textbereich .loc-img:hover {position:relative; width: 1000px; height: auto; display: block; z-index: 999; transition: 0.6s;}
+    #textbereich ruby > rt {font-size: 12px; letter-spacing: 6px;}
 
             /* -- ------------------------------------------------ -- */
             /* -- ------------------------------------------------ -- */
@@ -432,3 +433,95 @@ body, html {
             /* ----------------------------------------- */
 
     #textbereich .highlight-for-later-edit {background-color: yellow;}
+
+#dialog-overlay {
+    /* fill screen */
+    width:100%; 
+    height:100%;
+    
+    /* transparency for different browsers */
+    filter:alpha(opacity=80); 
+    -moz-opacity:0.8; 
+    -khtml-opacity: 0.8; 
+    opacity: 0.8; 
+    background:#000; 
+
+    /* make sure it appear behind the dialog box but above everything else */
+    position:absolute; 
+    top:0; left:0; 
+    z-index:3000;
+
+    display: none;
+    }
+
+
+#dialog-box {
+    /* css3 drop shadow */
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    
+    /* css3 border radius */
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    
+    background:#eee;
+    /* styling of the dialog box */ 
+    width:328px; 
+    
+    /* >> high z-index << */
+    position:absolute; 
+    z-index:5000; 
+
+    /* hide it by default */
+    display:none;
+    }
+
+#dialog-box .dialog-content {
+    text-align:left; 
+    padding:10px; 
+    margin:13px;
+    color:#666; 
+    font-family:arial;
+    font-size:11px; 
+    }
+
+a.dialog-button {
+    margin:10px auto 0 auto;
+    text-align:center;
+    display: block;
+    width:50px;
+    padding: 5px 10px 6px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1;
+    background-color: #007FFF;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    position: relative;
+    cursor: pointer; 
+    }  
+
+a.dialog-button:hover {
+    background-color: #73B9FF;
+    text-decoration: none;
+    color: white;  
+    }
+
+a.dialog-button:active {
+    background-color: #004993;
+}
+
+#dialog-box .dialog-content p {
+    font-weight:700; margin:0;
+    }  
+
+#dialog-box .dialog-content ul {
+    margin:10px 0 10px 20px; 
+    padding:0; 
+    height:50px;
+    }
