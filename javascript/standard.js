@@ -9,10 +9,10 @@
 		}
 
 /* -- ----------------------------------------------------- -- */
-/* -- B K S D   S E T   A C T I V E   A C T I V E   M E N Ãœ -- */
+/* -- B K S D   S E T   A C T I V E   A C T I V E   M E N Ü -- */
 /* -- ----------------------------------------------------- -- */
 
 function setActiveMenu(id) {
 	active_remvove(); // Entferne Active-Markierung
-	jQuery(id).addClass('active'); // FÃ¼ge Klasse Active hinzu
+	jQuery(id).addClass('active'); // Füge Klasse Active hinzu
 	}

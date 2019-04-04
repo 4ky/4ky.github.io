@@ -14,7 +14,7 @@ q="milliseconds seconds minutes hours days weeks months years decades centuries 
 // Custom code
 
 setInterval(function() {
-    var timespan = countdown(new Date("March 17, 2017"), new Date());
+    var timespan = countdown(new Date("March 17, 2017 15:59:00 UTC"), new Date());
     var div = document.getElementById('niertime');
     div.innerHTML = "" + timespan.years + " Jahren, " + timespan.months + " Monaten, " + timespan.days + " Tagen, " + timespan.hours + " Stunden, " + timespan.minutes + " Minuten und " + timespan.seconds + " Sekunden"
 }, 1000);
