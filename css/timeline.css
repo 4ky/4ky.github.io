@@ -117,3 +117,12 @@ body {
   left: 0%;
   }
 }
+
+.content h2 {
+  border-bottom: 2px solid #FFF;
+  margin: 0;
+}
+
+.content p {
+  padding-top: 0.5px;
+}
