@@ -151,7 +151,6 @@ ul li a {
 }
 /* Parallax Section */
 .banner {
-	background-color: #2D9AB7;
 	background-image: url(../images/background.gif);
 	height: 400px;
 	background-attachment: fixed;
