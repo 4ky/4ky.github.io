@@ -6,6 +6,13 @@
     display: none; 
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow: hidden;
+  overflow-y: scroll;
+  -ms-overflow-style: -ms-autohiding-scrollbar
+}
+
 body {
 	font-family: 'Source Sans Pro', sans-serif;
 	background-color: #f2f2f2;
@@ -499,4 +506,5 @@ nav ul li {
 .bold {font-weight: bold;}
 .link-shadow {transition: text-shadow 0.3s;}
 .link-shadow:hover {text-shadow: 1px 1px 0px #000, 2px 2px 0px #000; transition: text-shadow 0.3s;}
+.perm-shadow {text-shadow: 1px 1px 0px #000, 2px 2px 0px #000;}
 ::selection {background-color: #FFBFC3;  color: #FFF;}
