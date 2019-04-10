@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kontaktiere uns – Pink Ribbon Foundation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body>
+
+
+<div class="container">
+  <h1><i class="fas fa-ribbon"></i> Kontaktiere uns!</h1>
+  <form action="/action_page.php">
+    <label for="fname">Vorname</label>
+    <input type="text" id="fname" name="firstname" placeholder="Dein Name">
+
+    <label for="lname">Nachname</label>
+    <input type="text" id="lname" name="lastname" placeholder="Dein Nachname">
+
+    <label for="mail">E-Mail-Adresse</label>
+    <input type="text" id="mail" name="mail" placeholder="beispiel@pinkribbon.de">
+
+    <label for="country">Region</label>
+    <select id="region" name="region">
+      <option value="oceania">— Wähle deine Region —</option>
+      <option value="oceania">Ozeanien</option>
+      <option value="na">Nordamerika / Kanada</option>
+      <option value="eu">Europa</option>
+      <option value="as">Asien</option>
+    </select>
+
+    <label for="subject">Wo liegt das Problem?</label>
+    <textarea id="subject" name="subject" placeholder="" style="height:200px"></textarea>
+
+    <input type="submit" value="Absenden">
+  </form>
+</div>
+</body>
+</html>
