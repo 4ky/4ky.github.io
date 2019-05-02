@@ -31,7 +31,7 @@ code {background-color: rgba(17,29,83,1.00); padding: 3px; border-radius: 3px; c
 #gtmk-yorha .image:hover {transform: scale(1.2); box-shadow: 20px 20px 40px #FFF, -20px -20px 40px #FFF; transition: 1s;}
 
 .button {border-radius: 4px; font-family: 'NieR HUD'; padding: 8px; background-color: #D8D8D8; width: 55%; transition: 0.3s; color: #0E0E0E;}
-.button:hover {opacity: 1; transform: scale(1.12); transition: 0.3s; cursor: pointer; background-color: #222; color: #D8D8D8;}
+.button:hover {opacity: 1; transform: scale(1.12); transition: 0.3s; cursor: not-allowed; background-color: #222; color: #D8D8D8;}
 .button:active {background-color: #D7D7D7; color: #0d0e0f; transition: 0s;}
 
 .noselect {
