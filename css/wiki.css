@@ -90,7 +90,6 @@ body, html {
     }
 
 #kopfbereich {
-    position: fixed;
     top: 0;
     left: 0;
     /*background: linear-gradient(130deg, #4D493E 1%, #C8C2AA 50%);*/
@@ -247,6 +246,11 @@ body, html {
     #textbereich .loc-img {width: 300px; transition: 0.6s; cursor: zoom-in;}
     #textbereich .loc-img:hover {position:relative; width: 1000px; height: auto; display: block; z-index: 999; transition: 0.6s;}
     #textbereich ruby > rt {font-size: 12px; letter-spacing: 6px;}
+    #textbereich .blur-spoiler > p {filter: blur(100%);}
+    #textbereich .blur-spoiler > p:hover {filter: blur(0); transition: 0.5s;}
+    .back-to-top {position: fixed; bottom: 0; right: 0; z-index: 10; background-color: #0d0e0f; padding-bottom: 7px; border-radius: 9px; margin-bottom: 15px; margin-right: 15px;}
+    .fa-arrow-alt-circle-up {color: grey;}
+
 
             /* -- ------------------------------------------------ -- */
             /* -- ------------------------------------------------ -- */
