@@ -23,6 +23,8 @@ footer {position: absolute; bottom: 0; text-align: center; width: 100%;}
 footer .grad {background-color: rgba(22,22,22,0.85); padding: 8px; border-radius: 8px; opacity: .7; padding-left: 10px; padding-right: 10px;}
 .sans {font-family: sans-serif;}
 footer:selection {background-color: none;}
+code {background-color: rgba(17,29,83,1.00); padding: 3px; border-radius: 3px; color: rgba(187,187,187,1.00);}
+.half-opac {opacity: 0.7; filter: opacity(0.7);}
 
 
 #gtmk-yorha .image { width: 200px; height: 200px; background-image: url(../images/lunartear.png); background-size: 100% 100%; transition: 1s;}
